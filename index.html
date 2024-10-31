@@ -1,22 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarjetas Halloween</title>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+      }
+
+      img {
+        width: 100%;
+      }
     </style>
-</head>
-<div class="container"></div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <figure>
+          <img src="images/bruja.png" alt="Bruja Piruja" />
+        </figure>
+        <div class="card__tittle">
+          <h2>Bruja</h2>
+        </div>
+        <div class="card__content"></div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          ipsam repellat optio at, vel dicta quisquam quia magni molestias
+          itaque quae alias commodi facere accusamus? Quas possimus ducimus
+          molestias dolorem!
+        </p>
+      </div>
 
-<body>
+      <div class="container">
+        <div class="card">
+          <figure>
+            <img src="images/calabaza.png" alt="Calabaza" />
+          </figure>
+          <div class="card__tittle">
+            <h2>Calabaza</h2>
+          </div>
+          <div class="card__content"></div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            ipsam repellat optio at, vel dicta quisquam quia magni molestias
+            itaque quae alias commodi facere accusamus? Quas possimus ducimus
+            molestias dolorem!
+          </p>
+        </div>
+      </div>
 
-</body>
-
+      <div class="container">
+        <div class="card">
+          <figure>
+            <img src="images/fantasma.png" alt="Fantasma" />
+          </figure>
+          <div class="card__tittle">
+            <h2>Fantasma</h2>
+          </div>
+          <div class="card__content"></div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            ipsam repellat optio at, vel dicta quisquam quia magni molestias
+            itaque quae alias commodi facere accusamus? Quas possimus ducimus
+            molestias dolorem!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
